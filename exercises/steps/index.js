@@ -17,6 +17,45 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+// function steps(n) {
+//     for (let row = 0;  row < n; row++) {
+//         let stair = ''; 
+
+//         for (let column = 0;  column < n; column++) {
+//             if (column <= row ) {
+//                 stair += '#';
+//             } else  {
+//                 stair += ' ';
+//             }
+//         }
+//         console.log(stair); 
+//     }
+// }
+
+
+// if row is equal to n than the problem is over
+// if the stair has a length equal to n, than we are at then end of a row
+// if the length of stair string is less than or equal to row number, add a # otherwise add a space
+
+function steps(n, row = 0, stair = '') {
+
+    if (n === row) {
+        return; 
+    }   
+
+    if (n === stair.length) {
+        console.log(stair); 
+      return steps(n, row + 1); 
+    }
+
+    if (stair.length <= row) {
+        stair += '#';
+    } else { 
+        stair += ' '; 
+    }
+
+    steps(n, row, stair)
+    
+}
 
 module.exports = steps;
