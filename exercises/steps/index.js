@@ -44,7 +44,6 @@ function steps(n, row = 0, stair = '') {
     }   
 
     if (n === stair.length) {
-        console.log(stair); 
       return steps(n, row + 1); 
     }
 
