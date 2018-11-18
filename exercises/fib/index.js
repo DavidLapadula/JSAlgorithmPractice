@@ -13,19 +13,21 @@ function memoize(fn){
     const cache = {}; 
 
     return function(...args) {
+       
         if (cache[args]) {
             return cache[args]; 
         }
 
         const result = fn.apply(this, args); 
 
-        cache[args] = result; 
+        cache[args] = result;
 
         return result; 
     }
 }
 
 function fib(n) {
+
     if (n < 2) {
         return n; 
     }
@@ -34,6 +36,9 @@ function fib(n) {
 }
 
 fib = memoize(fib); 
+
+fib(4); 
+
 
 module.exports = fib;
 
