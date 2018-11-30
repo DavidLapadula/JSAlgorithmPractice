@@ -185,7 +185,7 @@ describe('RemoveAt', () => {
 
   test('removeAt deletes the first node', () => {
     const l = new List();
-    l.insertLast(1);
+    l.insertLast(1); 
     l.insertLast(2);
     l.insertLast(3);
     l.insertLast(4);
@@ -228,7 +228,7 @@ describe('InsertAt', () => {
     const l = new List();
     l.insertLast('a');
     l.insertLast('b');
-    l.insertLast('c');
+    l.insertLast('c'); 
     l.insertAt('hi', 0);
     expect(l.getAt(0).data).toEqual('hi');
     expect(l.getAt(1).data).toEqual('a');
@@ -272,7 +272,7 @@ describe('InsertAt', () => {
   });
 });
 
-describe.skip('ForEach', () => {
+describe('ForEach', () => {
   test('applies a transform to each node', () => {
     const l = new List();
 
