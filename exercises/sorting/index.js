@@ -44,7 +44,16 @@ function selectionSort(arr) {
 }
 
 function mergeSort(arr) {
+    // value gets returned here to return a single value to the merge value
+    if (arr.length === 1) {
+        return arr;
+    };
 
+    const center = Math.floor(arr.length / 2);
+    const left = arr.slice(0, center);
+    const right = arr.slice(center);
+
+    return merge(mergeSort(left), mergeSort(right));
 }
 
 function merge(left, right) {
@@ -62,7 +71,7 @@ function merge(left, right) {
 
     // spread the rest of the values and the sorted array into a new array and return it
     // this work because one of the arrays is going to be totally empty
-     return [...results, ...left, ...right];
+    return [...results, ...left, ...right];
 }
 
 module.exports = { bubbleSort, selectionSort, mergeSort };
