@@ -27,5 +27,5 @@ Practicing Data Structures and Algorithms in Javascript
 
 ## Acknowledgments
 
-* Big thanks to Stephen Grider for making this great course available. 
+* Big thanks to Stephen Grider for making this great course available. I recommend this course to anyone interested in learning how to implement common algorithms in javascript. 
 
