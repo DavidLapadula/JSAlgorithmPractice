@@ -1,8 +1,6 @@
 ## Javascript Data Structures and Algorithms
 Practicing Data Structures and Algorithms in Javascript
 
-***
-
 ## Completed
 - Check for anagram
 - Binary Search and validation
