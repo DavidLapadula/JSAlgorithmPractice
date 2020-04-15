@@ -21,9 +21,3 @@ Practicing Data Structures and Algorithms in Javascript
 - Vowel Checking
 - Generators
 - Array Weaving
-
-
-## Acknowledgments
-
-* Big thanks to Stephen Grider for making this great course available. I recommend this course to anyone interested in learning how to implement common algorithms in javascript. 
-
