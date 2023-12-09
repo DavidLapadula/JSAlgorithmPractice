@@ -1,5 +1,5 @@
 ## Javascript Data Structures and Algorithms
-Practicing Data Structures and Algorithms in Javascript
+Practicing Data Structures and Algorithms in JavaScript. 
 
 ## Completed
 - Check for anagram
